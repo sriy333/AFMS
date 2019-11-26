@@ -1,0 +1,36 @@
+.nav_primary-menu{
+    float: right;
+    padding: 10px;
+    padding-top: 0;
+    padding-right: 40px;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 99;
+    padding-top: 30px;
+    padding-right: 0 !important;
+    margin: 0;
+    list-style: none;
+}
+.nav-item-soft{
+    display: inline-block;
+    float: left;
+    margin: 0 0px;
+    position: relative;
+    z-index: 999;
+}
+
+.softService-list-item{
+    list-style: none;
+            .softService-list-title{
+                display: block;
+                margin: 0;
+                cursor: pointer;
+                text-decoration: none;
+                position: relative;
+                font-size: 10px;
+                text-align: left;
+                &:hover {
+                    background: rgb(245, 106, 106);
+                }
+            }
+}

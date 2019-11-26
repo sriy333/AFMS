@@ -1,0 +1,72 @@
+<div class="container-fluid" style="height: 150px;">
+  <div class="row">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 -1 750 50" style="display: block;margin-left: 7%;position: fixed;">
+      <path d="m 25 2 l -8 14 l 4 8 l 4 -7 l 5 7 l 3 -7 l -8 -15 M 0 50 l 15 -32 l 9 17 l -4 8 l -5 -10 l -7 17 z m 20 0 l 16 -33 l 14 34 l -6 0 l -8 -21 l -9 21 M 33 43 l -3 7 l 7 0 l -4 -7"></path>
+    </svg>
+        <div class="row">
+          <div class="col-6" style="margin-top: 1%;margin-left: 15%;position: fixed;font-family: sans-serif;font-size: 3vw;">
+            <p> ASSIMILATED</p>
+          </div>
+          <div class="col-6" style="margin-top: 4.7%;margin-left: 15%;position: fixed;font-family: sans-serif;font-size: 1.47vw;">
+            <p>Facility Management Services</p>
+          </div>
+      </div>
+        <div class="row">
+            <div class="col" style="position: absolute;top: 13%;margin-left: 8%;"> A </div>
+            <div class="col" style="position: absolute;top: 13%;margin-left: 10.5%;"> F </div>
+            <div class="col" style="position: absolute;top: 13%;margin-left: 11.8%;"> M </div>
+            <div class="col" style="position: absolute;top: 13%;margin-left: 13.5%;"> S </div>
+          </div>
+        </div>
+          
+<nav class="nav nav-default" role="navigation">
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav" style="float: right; margin-top: 4.1%; margin-right: 15%;">
+      <li class="active"><a href="#" style="color: white;background: red none repeat scroll 0 0 !important;display: block;font-size: 12px;padding: 8px 12px;border-radius: 4px;letter-spacing: 0.5px;font-weight: 700;position: relative;z-index: 999;text-transform: uppercase;">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;background: red none repeat scroll 0 0 !important;display: block;font-size: 12px;padding: 8px 12px;border-radius: 4px;letter-spacing: 0.5px;font-weight: 700;position: relative;z-index: 999;text-transform: uppercase;"> Soft Services <b class="caret"></b></a>
+        <ul class="dropdown-menu" style="color: white;background: red none repeat scroll 0 0 !important;">
+          <ng-container *ngIf="softService">
+            <li *ngFor="let item of softService" class="softService-list-item">  
+              <a class="softService-container-link" routerLinkActive="active" (click)="onSelect(item)" style="background-color: red;">
+                <div class = "softService-list-title">
+                  <li><a href="{{item.href}}" style="color: white;text-decoration: none;"><h5 >{{item.id}}</h5></a></li>
+                </div>
+              </a>
+            </li>
+          </ng-container>
+        </ul>
+      </li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;background: red none repeat scroll 0 0 !important;display: block;font-size: 12px;padding: 8px 12px;border-radius: 4px;letter-spacing: 0.5px;font-weight: 700;position: relative;z-index: 999;text-transform: uppercase;"> Operations & Maintenance <b class="caret"></b></a>
+          <ul class="dropdown-menu" style="color: white;background: red none repeat scroll 0 0 !important;">
+              <ng-container *ngIf="softService">
+                  <li *ngFor="let item of operationsAndMaintenance" class="softService-list-item">  
+                    <a class="softService-container-link" routerLinkActive="active" (click)="onSelect(item)" style="background-color: red;">
+                      <div class = "softService-list-title">
+                        <li><a href="{{item.href}}" style="color: white;text-decoration: none;"><h5 >{{item.id}}</h5></a></li>
+                      </div>
+                    </a>
+                  </li>
+                </ng-container>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;background: red none repeat scroll 0 0 !important;display: block;font-size: 12px;padding: 8px 12px;border-radius: 4px;letter-spacing: 0.5px;font-weight: 700;position: relative;z-index: 999;text-transform: uppercase;"> Others <b class="caret"></b></a>
+            <ul class="dropdown-menu" style="color: white;background: red none repeat scroll 0 0 !important;">
+                <ng-container *ngIf="softService">
+                    <li *ngFor="let item of other" class="softService-list-item">  
+                      <a class="softService-container-link" routerLinkActive="active" (click)="onSelect(item)" style="background-color: red;">
+                        <div class = "softService-list-title">
+                          <li><a href="{{item.href}}" style="color: white;text-decoration: none;"><h5 >{{item.id}}</h5></a></li>
+                        </div>
+                      </a>
+                    </li>
+                  </ng-container>
+            </ul>
+          </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+</div>
