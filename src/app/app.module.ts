@@ -7,6 +7,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { BackgroundHeaderComponent } from './components/homepage/background-header/background-header.component';
 import { BackgroundFooterComponent } from './components/homepage/background-footer/background-footer.component';
 import { SoftServicesComponent } from './components/homepage/soft-services/soft-services.component';
+import { DemoComponent } from './components/homepage/demo/demo.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SoftServicesComponent } from './components/homepage/soft-services/soft-
     HomepageComponent,
     BackgroundHeaderComponent,
     BackgroundFooterComponent,
-    SoftServicesComponent
+    SoftServicesComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
